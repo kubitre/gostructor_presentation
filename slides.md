@@ -25,6 +25,13 @@ fonts:
 
 <style>
 
+h3 {
+  position: absolute;
+  right: 25px;
+  font-size: 1em;
+
+}
+
 .logo_kontur {
   height: 30px;
   margin-right:auto;
@@ -89,7 +96,7 @@ h2{
 # Глоссарий
 
 ## Точечная конфигурация - конфигурация каждого отдельного поля
-## Источник конфигурации - ресурс, откуда можно забрать данные
+## Источник конфигурации - ресурс
 
 
 <style>
@@ -101,7 +108,7 @@ h2{
 
 # Какие бывают источники
 
-## hocon, toml, yaml, ini, json
+## 1. hocon, toml, yaml, ini, json
 
 <style>
 h2{
@@ -113,8 +120,8 @@ h2{
 
 # Какие бывают источники
 
-## hocon, toml, yaml, ini, json
-## дефолтные значения, переменные окружения
+## 1. hocon, toml, yaml, ini, json
+## 2. дефолтные значения, переменные окружения
 
 <style>
 h2{
@@ -126,9 +133,9 @@ h2{
 
 # Какие бывают источники
 
-## hocon, toml, yaml, ini, json
-## дефолтные значения, переменные окружения
-## vault
+## 1. hocon, toml, yaml, ini, json
+## 2. дефолтные значения, переменные окружения
+## 3. vault
 
 <style>
 h2{
@@ -140,10 +147,10 @@ h2{
 
 # Какие бывают источники
 
-## hocon, toml, yaml, ini, json
-## дефолтные значения, переменные окружения
-## vault
-## config file server(spring cloud config server), key\value store(consul, etcd, firestore) 
+## 1. hocon, toml, yaml, ini, json
+## 2. дефолтные значения, переменные окружения
+## 3. vault
+## 4. config file server(spring cloud config server), key\value store(consul, etcd, firestore) 
 
 <style>
 h2{
@@ -151,11 +158,6 @@ h2{
 }
 </style>
 
----
-
-# Главная боль - Стейджинги
-
-<img src="/slide-images/11.png"/>
 ---
 
 ## Так а причём здесь го?
@@ -167,6 +169,12 @@ h2 {
   padding-top: auto;
 }
 </style>
+
+---
+
+# Главная боль - Стейджинги
+
+<img src="/slide-images/11.png"/>
 
 ---
 
@@ -303,7 +311,7 @@ h2{
 # Что будем конфигурировать?
 
 
-```go{all|2|3|4|5|all}
+```go{2}
 type ServiceConfiguration struct {
 	Main           MainConfig
 	Db             DatabaseConfig
@@ -336,6 +344,26 @@ code {
   line-height: 1.5;
 }
 </style>
+
+---
+
+# Суммирующая структура
+
+```go{all|3}
+type ServiceConfiguration struct {
+	Main           MainConfig
+	Db             DatabaseConfig
+	ServiceA       IntegrationСonf
+	BusinessSecret BusinessConf 
+}
+```
+<style>
+code {
+  font-size: 2.7em;
+  line-height: 1.5;
+}
+</style>
+
 ---
 
 # Что будем конфигурировать?
@@ -357,6 +385,24 @@ code {
 </style>
 ---
 
+# Суммирующая структура
+
+```go{all|4}
+type ServiceConfiguration struct {
+	Main           MainConfig
+	Db             DatabaseConfig
+	ServiceA       IntegrationСonf
+	BusinessSecret BusinessConf 
+}
+```
+<style>
+code {
+  font-size: 2.7em;
+  line-height: 1.5;
+}
+</style>
+
+---
 
 # Что будем конфигурировать?
 
@@ -375,6 +421,25 @@ code {
   line-height: 1.5;
 }
 </style>
+---
+
+# Суммирующая структура
+
+```go{all|5}
+type ServiceConfiguration struct {
+	Main           MainConfig
+	Db             DatabaseConfig
+	ServiceA       IntegrationСonf
+	BusinessSecret BusinessConf 
+}
+```
+<style>
+code {
+  font-size: 2.7em;
+  line-height: 1.5;
+}
+</style>
+
 ---
 
 # Что будем конфигурировать?
