@@ -45,6 +45,18 @@ h3 {
 -->
 ---
 
+<img src="slide-images/mems/mem_start.png"/>
+
+<style>
+img {
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+---
+
 # Предистория
 
 ## Проект - 36 микросервисов и сервисов
@@ -163,10 +175,16 @@ h2{
 ## Так а причём здесь го?
 
 
+<img src="slide-images/go_bg_3.jpg" />
+
 <style>
 h2 {
   text-align: center;
   padding-top: auto;
+}
+
+img {
+  
 }
 </style>
 
@@ -217,42 +235,6 @@ h1 {
 }
 </style>
 
----
-
-# Каковы ожидания от решения?
-
-## 1. Конфигурация может быть в разных источниках
-
-<style>
-h2 {
-  padding-top: 25px;
-}
-</style>
----
-
-# Каковы ожидания от решения?
-
-## 1. Конфигурация может быть в разных источниках
-## 2. Точечная подстановка значений полям
-
-<style>
-h2 {
-  padding-top: 25px;
-}
-</style>
----
-
-# Каковы ожидания от решения?
-
-## 1. Конфигурация может быть в разных источниках
-## 2. Точечная подстановка значений полям
-## 3. Количества доступных источников достаточно
-
-<style>
-h2 {
-  padding-top: 25px;
-}
-</style>
 ---
 
 # Критерии отбора решения
@@ -308,6 +290,34 @@ h2{
 
 ---
 
+# Нам нужна конфигурация окружения
+
+<img src="slide-images/infoGraphics/hand_env_config.png"/>
+
+<style>
+img {
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+---
+
+# А уже относительно этого можно будем конфигурировать структуры
+
+<img src="slide-images/infoGraphics/hand_config.png"/>
+
+<style>
+img {
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+---
+
 # Что будем конфигурировать?
 
 
@@ -325,6 +335,7 @@ code {
   line-height: 1.5;
 }
 </style>
+
 ---
 
 # Что будем конфигурировать?
@@ -460,7 +471,7 @@ code {
 </style>
 ---
 
-# Как будет выглядеть конфигурация в конкретном окружении?
+# Как будет выглядеть конфигурация окружения?
 
 ```yaml{all|2|7|9|11|13|all}
 sources:
@@ -564,7 +575,8 @@ code {
   for key, source := range sources {
 		switch key {
 		case "json":
-          if err := configuration.addFile(source.(map[string]interface{})["pathToFile"].(string)); err != nil {
+          if err := configuration.addFile(source.(map[string]interface{})
+            ["pathToFile"].(string)); err != nil {
             return ServiceConfiguration{}, err
 		  }
     break
@@ -660,7 +672,8 @@ code {
 
 ```go{all|2|3}
   case "vault":
-    if err := configuration.addVault(source.(map[interface{}]interface{})); err != nil {
+    if err := configuration.addVault(source
+      .(map[interface{}]interface{})); err != nil {
       return ServiceConfiguration{}, err
     }
     break
@@ -751,6 +764,74 @@ func (cfg *ConfigVault) connectToVault() error {
 }
 ```
 
+---
+
+#  Конфигурируем из волта
+
+```go{all|4}
+...
+  if err := configurationVault.connectToVault(); err != nil {
+		return err
+	}
+
+	configFromVaultDatabase, err := vaultConfig.getPath(configurationVault.VaultPath)
+	if err != nil {
+		return err
+	}
+  config.BusinessSecret.PrivateCertPath = configFromVaultDatabase["certPath"].(string)
+  config.BusinessSecret.PrivateKeyPath = configFromVaultDatabase["keyPath"].(string)
+  config.ServiceA.ApiKey = configFromVaultDatabase["ApiKey"].(string)
+  return nil
+}
+```
+<style>
+code {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+</style>
+
+---
+
+# Получение данных из волта
+
+<style>
+code {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+</style>
+
+---
+
+#  Конфигурируем из волта
+
+```go{all|8|9|10}
+...
+  if err := configurationVault.connectToVault(); err != nil {
+		return err
+	}
+
+	configFromVaultDatabase, err := vaultConfig.getPath(configurationVault.VaultPath)
+	if err != nil {
+		return err
+	}
+  config.BusinessSecret.PrivateCertPath = configFromVaultDatabase["certPath"].(string)
+  config.BusinessSecret.PrivateKeyPath = configFromVaultDatabase["keyPath"].(string)
+  config.ServiceA.ApiKey = configFromVaultDatabase["ApiKey"].(string)
+  return nil
+}
+```
+<style>
+code {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+</style>
+
+---
+
+
 <style>
 code {
   font-size: 1.5em;
@@ -762,9 +843,10 @@ code {
 
 # Опишем таким образом процесс для всех источников
 
-```go{all|7}
+```go{all|8}
   case "vault":
-    if err := configuration.addVault(source.(map[interface{}]interface{})); err != nil {
+    if err := configuration.addVault(source
+      .(map[interface{}]interface{})); err != nil {
       return ServiceConfiguration{}, err
     }
     break
@@ -819,9 +901,10 @@ code {
 
 # Остались значение по умолчанию
 
-```go{all|11|12}
+```go{all|12}
   case "vault":
-    if err := configuration.addVault(source.(map[interface{}]interface{})); err != nil {
+    if err := configuration.addVault(source
+      .(map[interface{}]interface{})); err != nil {
       return ServiceConfiguration{}, err
     }
     break
@@ -908,6 +991,8 @@ h2{
 
 ---
 
+# Viper
+
 <img class="logo" src="/slide-images/viper.png" height="30"/>
 <img class="social" src="/slide-images/viper_social.png"/>
 
@@ -956,6 +1041,34 @@ h4 {
 
 .social{
   height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+---
+
+# 1 Шаг настройка
+
+<img src="slide-images/infoGraphics/viper_settings.png"/>
+
+<style>
+img {
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+---
+
+# 2 Шаг получение значений
+
+<img src="slide-images/infoGraphics/viper_get_values.png"/>
+
+<style>
+img {
+  height: 450px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1166,23 +1279,6 @@ h2{
 
 ---
 
-# Теперь к метрикам
-
-## 1. 113 строчек кода
-## 2. Точечной конфигурации нет
-## 3. Дополнительный инфровый код
-## 4. Внутри касты типов без обработки ошибок
-
-
-
-<style>
-h2{
-  padding-top: 25px;
-}
-</style>
-
----
-
 # Cleanenv
 
 <img class="logo" src="/slide-images/cleanenv_logo.png" height="30"/>
@@ -1243,7 +1339,70 @@ h4 {
 
 ---
 
-# Модифицируем конфиг-структуры
+# Теги в Go
+
+<img src="slide-images/infoGraphics/tags_go.png"/>
+
+<style>
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+---
+
+# Получение мета информации из тегов
+
+<img src="slide-images/infoGraphics/cleanenv_meta.png"/>
+
+<style>
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+---
+
+# Получение значений в порядке указания тегов
+
+<img src="slide-images/infoGraphics/cleanenv_config_struct.png"/>
+
+<style>
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+---
+
+# Используем следующие теги из этой библиотеки
+
+## 1. env
+
+<style>
+h2{
+  padding-top: 25px;
+}
+</style>
+---
+
+
+# Используем следующие теги из этой библиотеки
+
+## 1. env
+## 2. env-default
+
+<style>
+h2{
+  padding-top: 25px;
+}
+</style>
+---
+
+# Модифицируем наши конфиг-структуры
 
 ```go{all|2|3|all}
 type MainConfig struct {
@@ -1482,15 +1641,93 @@ h2{
 
 ---
 
+# Получаем мета информацию из тегов
+
+<img src="slide-images/infoGraphics/gostructor_meta.png"/>
+
+<style>
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+---
+
+# Получаем значения
+
+<img src="slide-images/infoGraphics/gostructor_get_configs.png"/>
+
+<style>
+img {
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+---
+
+# Как выглядит мета информация в тегах
+
+<img src="slide-images/infoGraphics/gostructor_tag1.png"/>
+
+<style>
+img {
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+---
+
+# Приоритезация источников
+
+<img src="slide-images/infoGraphics/gostructor_priority_1.png"/>
+
+<style>
+img {
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+---
+
+# Кастомизация приоритетов в зависимости от окружения
+
+<img src="slide-images/infoGraphics/gostructor_priority2.png"/>
+
+<style>
+img {
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+---
+
 # Модифицируем наши структуры
 
 ```go
 type MainConfig struct {
-	IsKubernetes    bool   `cf_env:"KUBERNETES" cf_default:"false"`
-	ServiceName     string `cf_json:"name" cf_env:"SERVICE_NAME" cf_default:"test"`
+  IsKubernetes    bool   `cf_env:"KUBERNETES" 
+    cf_default:"false"`
+  ServiceName     string `cf_json:"name" 
+    cf_env:"SERVICE_NAME" cf_default:"test"`
 	StrategyRequest string `cf_default:"sequential"`
 }
 ```
+
+<style>
+code {
+  font-size: 2em;
+  line-height: 1.5;
+}
+</style>
 
 ---
 
@@ -1498,11 +1735,19 @@ type MainConfig struct {
 
 ```go
 type DatabaseConfig struct {
-	Replicas []string `cf_env:"MONGO_REPLICAS" cf_default:"localhost:27017"`
+  Replicas []string `cf_env:"MONGO_REPLICAS"
+    cf_default:"localhost:27017"`
 	Username string   `cf_vault:"infra/mongo#username"`
 	Password string   `cf_vault:"infra/mongo#password"`
 }
 ```
+
+<style>
+code {
+  font-size: 2em;
+  line-height: 1.5;
+}
+</style>
 
 ---
 
@@ -1510,30 +1755,94 @@ type DatabaseConfig struct {
 
 ```go
 type IntegrationConf struct {
-	APIKey          string `cf_vault:"integration/serviceA#api-key" cf_env:"SERVICE_A_KEY" cf_default:"testApi" cf_priority:"TEST:cf_env,cf_default;PROD:cf_vault"`
+  APIKey          string `cf_vault:"integration/serviceA#api-key" 
+    cf_env:"SERVICE_A_KEY" cf_default:"testApi"`
 	StrategyRequest string `cf_default:"sequential"`
 	RateLimit       int16  `cf_default:"100"`
 }
 ```
 
+<style>
+code {
+  font-size: 2em;
+  line-height: 1.5;
+}
+</style>
+
 ---
 
+# Кастомизируем последовательность источников
+
+```go
+type IntegrationConf struct {
+  APIKey string `... cf_priority:"SEQUENCE_1:cf_env,
+  cf_default;SEQUENCE_2:cf_vault"`
+  ...
+}
+```
+
+<style>
+code {
+  font-size: 2em;
+  line-height: 1.5;
+}
+</style>
+
+---
 
 # Модифицируем наши структуры
 
 ```go
 type BusinessConf struct {
-	PrivateKeyPath  string `cf_vault:"services/businessService1#keyPath" cf_default:"/var/test.pem" cf_priority:"TEST:cf_default;PROD:cf_vault"`
-	PrivateCertPath string `cf_vault:"services/businessService1#certPath" cf_default:"/var/test.crt" cf_priority:"TEST:cf_default;PROD:cf_vault"`
+  PrivateKeyPath  string `cf_vault:"services/
+    businessService1#keyPath" cf_default:"/var/test.pem"`
+  PrivateCertPath string `cf_vault:"services/
+    businessService1#certPath" cf_default:"/var/test.crt"`
 }
 ```
+
+<style>
+code {
+  font-size: 2em;
+  line-height: 1.5;
+}
+</style>
+
+---
+
+# Кастомизируем последовательность источников
+
+
+```go
+type BusinessConf struct {
+  PrivateKeyPath  string `cf_priority:"SEQUENCE_1:
+  cf_default;SEQUENCE_2:cf_vault"`
+  PrivateCertPath string `cf_priority:"SEQUENCE_1:
+  cf_default;SEQUENCE_2:cf_vault"`
+}
+```
+
+<style>
+code {
+  font-size: 2em;
+  line-height: 1.5;
+}
+</style>
 
 ---
 
 
 # Как будем прокидывать настройку окружения? 
 
-Теги наше всё!
+## Добавим в переменные окружения PRIORITY
+
+<style>
+h2 {
+  font-size: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
 
 ---
 
@@ -1550,6 +1859,12 @@ func ReadConfig() (ServiceConfiguration, error) {
 }
 
 ```
+<style>
+code {
+  font-size: 2em;
+  line-height: 1.5;
+}
+</style>
 
 ---
 
@@ -1579,42 +1894,10 @@ h2{
 </style>
 ---
 
-# Метрики
-
-## 1. 8 строчек кода
-## 2. Точечная конфигурация есть
-## 3. Много источников
-
-
-<style>
-h2{
-  padding-top: 25px;
-}
-</style>
-
----
-
-# Метрики
-
-## 1. 8 строчек кода
-## 2. Точечная конфигурация есть
-## 3. Много источников
-## 4. Есть возможность настраивать окружение
-
-
-<style>
-h2{
-  padding-top: 25px;
-}
-</style>
-
----
 
 # Плюсы gostructor
 
 ## 1. Автоматизация вне зависимости от окружения
-
-
 
 <style>
 h2{
@@ -1870,39 +2153,41 @@ h2{
 
 ---
 
+
+# Кому может подойти
+
+## 1. Больше 1 стейджинга
+
+
+
+<style>
+h2{
+  padding-top: 25px;
+}
+</style>
+
+---
+
+# Кому может подойти
+
+## 1. Больше 1 стейджинга
+## 2. Больше 1 источника конфигурации
+
+
+<style>
+h2{
+  padding-top: 25px;
+}
+</style>
+
+---
+
+
 # Кому может подойти
 
 ## 1. Больше 1 стейджинга
 ## 2. Больше 1 источника конфигурации
 ## 3. Кто не хочет писать лишний код
-
-
-<style>
-h2{
-  padding-top: 25px;
-}
-</style>
-
----
-
-# Кому может подойти
-
-## 1. Больше 1 стейджинга
-
-
-
-<style>
-h2{
-  padding-top: 25px;
-}
-</style>
-
----
-
-# Кому может подойти
-
-## 1. Больше 1 стейджинга
-## 2. Больше 1 источника конфигурации
 
 
 <style>
@@ -1921,5 +2206,15 @@ h2{
 
 # Спасибо за внимание
 
-Дайте обратную связь по библиотеке
-Контрибьютьте!
+## Буду признателен за отзывы любые
+
+<img class="logo_kontur" src="kontur.png"/>
+
+<style>
+.logo_kontur {
+  height: 30px;
+  margin-right:auto;
+  position: fixed;
+  bottom: 20px;
+}
+</style>
