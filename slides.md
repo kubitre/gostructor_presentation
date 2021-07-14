@@ -16,7 +16,7 @@ download: true
 
 
 <div class="logo_github">
-  <img class="logo_kontur" src="kontur.png"/>
+  <img class="logo_kontur" src="https://goreflect.github.io/slide-images/kontur.png"/>
 
   <a href="https://github.com/goreflect/gostructor" target="_blank" alt="GitHub"
     class="abs-br m-6 text-xl icon-btn opacity-50 !border-none !hover:text-white">
@@ -44,19 +44,7 @@ h3 {
 <!--
 Всем привет! Сегодня я буду рассказывать про конфигурацию и как я решал проблемы конфигурирования в своём проекте
 -->
----
 
-<img src="slide-images/mems/mem_start.png"/>
-
-<style>
-img {
-  height: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-</style>
-
----
 
 # Предистория
 
@@ -246,7 +234,7 @@ h2{
 ## Так а причём здесь го?
 
 
-<img src="slide-images/go_bg_3.jpg" />
+<img src="https://goreflect.github.io/slide-images/go_bg_3.jpg" />
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -271,7 +259,7 @@ img {
 
 # Главная боль - Стейджинги
 
-<img src="/slide-images/11.png"/>
+<img src="/https://goreflect.github.io/slide-images/11.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -287,7 +275,7 @@ img {
 
 # Dev 
 
-<img src="/slide-images/12.png" height={40}/>
+<img src="/https://goreflect.github.io/slide-images/12.png" height={40}/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -308,7 +296,7 @@ h1 {
 
 # Test
 
-<img src="/slide-images/13.png" height="30"/>
+<img src="/https://goreflect.github.io/slide-images/13.png" height="30"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -329,7 +317,7 @@ h1 {
 
 # Prod
 
-<img src="/slide-images/14.png" height="30"/>
+<img src="/https://goreflect.github.io/slide-images/14.png" height="30"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -435,7 +423,7 @@ h2{
 
 # Конфигурация окружения
 
-<img src="slide-images/infoGraphics/hand_env_config.png"/>
+<img src="https://goreflect.github.io/slide-images/infoGraphics/hand_env_config.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -457,7 +445,7 @@ img {
 
 # Мапим значения из источников
 
-<img src="slide-images/infoGraphics/hand_config.png"/>
+<img src="https://goreflect.github.io/slide-images/infoGraphics/hand_config.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -1396,8 +1384,8 @@ h2{
 
 # Viper
 
-<img class="logo" src="/slide-images/viper.png" height="30"/>
-<img class="social" src="/slide-images/viper_social.png"/>
+<img class="logo" src="/https://goreflect.github.io/slide-images/viper.png" height="30"/>
+<img class="social" src="/https://goreflect.github.io/slide-images/viper_social.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -1430,12 +1418,12 @@ h2{
 
 # Viper
 
-<img class="logo" src="/slide-images/viper.png" height="30"/>
-<img class="social" src="/slide-images/viper_social.png"/>
+<img class="logo" src="/https://goreflect.github.io/slide-images/viper.png" height="30"/>
+<img class="social" src="/https://goreflect.github.io/slide-images/viper_social.png"/>
 
 #### Ссылка на гитхаб: https://github.com/spf13/viper
 
-<img class="qr" src="/slide-images/viper_github.png" height="50"/>
+<img class="qr" src="/https://goreflect.github.io/slide-images/viper_github.png" height="50"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -1471,7 +1459,7 @@ h4 {
 
 # 1 Шаг настройка
 
-<img src="slide-images/infoGraphics/viper_settings.png"/>
+<img src="https://goreflect.github.io/slide-images/infoGraphics/viper_settings.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -1493,7 +1481,7 @@ img {
 
 # 2 Шаг получение значений
 
-<img src="slide-images/infoGraphics/viper_get_values.png"/>
+<img src="https://goreflect.github.io/slide-images/infoGraphics/viper_get_values.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -1785,8 +1773,8 @@ h2{
 
 # Cleanenv
 
-<img class="logo" src="/slide-images/cleanenv_logo.png" height="30"/>
-<img class="social" src="/slide-images/cleanenv_social.png"/>
+<img class="logo" src="/https://goreflect.github.io/slide-images/cleanenv_logo.png" height="30"/>
+<img class="social" src="/https://goreflect.github.io/slide-images/cleanenv_social.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -1820,12 +1808,12 @@ h2{
 
 # Cleanenv
 
-<img class="logo" src="/slide-images/cleanenv_logo.png" height="30"/>
-<img class="social" src="/slide-images/cleanenv_social.png"/>
+<img class="logo" src="/https://goreflect.github.io/slide-images/cleanenv_logo.png" height="30"/>
+<img class="social" src="/https://goreflect.github.io/slide-images/cleanenv_social.png"/>
 
 #### Ссылка на гитхаб: https://github.com/ilyakaznacheev/cleanenv
 
-<img class="qr" src="/slide-images/cleanenv_github.png" height="50"/>
+<img class="qr" src="/https://goreflect.github.io/slide-images/cleanenv_github.png" height="50"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -1861,7 +1849,7 @@ h4 {
 
 # Теги в Go
 
-<img src="slide-images/infoGraphics/tags_go.png"/>
+<img src="https://goreflect.github.io/slide-images/infoGraphics/tags_go.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -1882,7 +1870,7 @@ img {
 
 # Получение мета информации из тегов
 
-<img src="slide-images/infoGraphics/cleanenv_meta.png"/>
+<img src="https://goreflect.github.io/slide-images/infoGraphics/cleanenv_meta.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -1903,7 +1891,7 @@ img {
 
 # Получение значений в порядке указания тегов
 
-<img src="slide-images/infoGraphics/cleanenv_config_struct.png"/>
+<img src="https://goreflect.github.io/slide-images/infoGraphics/cleanenv_config_struct.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -2245,7 +2233,7 @@ h2{
 
 # Библиотека Gostructor
 
-<img class="social" src="/slide-images/gostructor_social.png"/>
+<img class="social" src="/https://goreflect.github.io/slide-images/gostructor_social.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -2279,11 +2267,11 @@ h2{
 
 # Библиотека Gostructor
 
-<img class="social" src="/slide-images/gostructor_social.png"/>
+<img class="social" src="/https://goreflect.github.io/slide-images/gostructor_social.png"/>
 
 Ссылка на гитхаб: https://github.com/goreflect/gostructor
 
-<img class="qr" src="/slide-images/gostructor_github.png" height="50"/>
+<img class="qr" src="/https://goreflect.github.io/slide-images/gostructor_github.png" height="50"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -2316,7 +2304,7 @@ h2{
 
 # Получаем мета информацию из тегов
 
-<img src="slide-images/infoGraphics/gostructor_meta.png"/>
+<img src="https://goreflect.github.io/slide-images/infoGraphics/gostructor_meta.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -2337,7 +2325,7 @@ img {
 
 # Получаем значения
 
-<img src="slide-images/infoGraphics/gostructor_get_configs.png"/>
+<img src="https://goreflect.github.io/slide-images/infoGraphics/gostructor_get_configs.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -2359,7 +2347,7 @@ img {
 
 # Как выглядит мета информация в тегах
 
-<img src="slide-images/infoGraphics/gostructor_tag1.png"/>
+<img src="https://goreflect.github.io/slide-images/infoGraphics/gostructor_tag1.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -2381,7 +2369,7 @@ img {
 
 # Приоритезация источников
 
-<img src="slide-images/infoGraphics/gostructor_priority_1.png"/>
+<img src="https://goreflect.github.io/slide-images/infoGraphics/gostructor_priority_1.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -2403,7 +2391,7 @@ img {
 
 # Кастомизация приоритетов в зависимости от окружения
 
-<img src="slide-images/infoGraphics/gostructor_priority2.png"/>
+<img src="https://goreflect.github.io/slide-images/infoGraphics/gostructor_priority2.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -3115,13 +3103,16 @@ h2{
 ---
 
 
-# Напоследок
-
-"Лучший тот код, который не написан"
-
+<img src="https://goreflect.github.io/slide-images/mems/end_mem.jpg"/>
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 350px;
+}
 .number_slide {
   position: absolute;
   bottom: 15px;
@@ -3133,11 +3124,21 @@ h2{
 
 # Спасибо за внимание
 
-## Буду признателен за отзывы любые
+## Остались вопросы?
 
-<img class="logo_kontur" src="kontur.png"/>
+Ссылки:
+
+<img src="https://goreflect.github.io/slide-images/links.png"/>
+
+<img class="logo_kontur" src="https://goreflect.github.io/slide-images/kontur.png"/>
 
 <style>
+
+img {
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .logo_kontur {
   height: 30px;
   margin-right:auto;
