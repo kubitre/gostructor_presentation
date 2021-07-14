@@ -45,6 +45,7 @@ h3 {
 Всем привет! Сегодня я буду рассказывать про конфигурацию и как я решал проблемы конфигурирования в своём проекте
 -->
 
+---
 
 # Предистория
 
@@ -259,7 +260,7 @@ img {
 
 # Главная боль - Стейджинги
 
-<img src="/https://goreflect.github.io/slide-images/11.png"/>
+<img src="https://goreflect.github.io/slide-images/11.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -275,7 +276,7 @@ img {
 
 # Dev 
 
-<img src="/https://goreflect.github.io/slide-images/12.png" height={40}/>
+<img src="https://goreflect.github.io/slide-images/12.png" height={40}/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -296,7 +297,7 @@ h1 {
 
 # Test
 
-<img src="/https://goreflect.github.io/slide-images/13.png" height="30"/>
+<img src="https://goreflect.github.io/slide-images/13.png" height="30"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -317,7 +318,7 @@ h1 {
 
 # Prod
 
-<img src="/https://goreflect.github.io/slide-images/14.png" height="30"/>
+<img src="https://goreflect.github.io/slide-images/14.png" height="30"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -417,6 +418,28 @@ h2{
   right: 25px;
 }
 
+</style>
+
+---
+
+# Какие решения рассмотрю
+
+<img src="https://goreflect.github.io/slide-images/infoGraphics/vs.png"/>
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
+<style>
+
+img {
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
 </style>
 
 ---
@@ -722,7 +745,7 @@ code {
 
 ---
 
-# А теперь посмотрим на код, который придётся написать руками
+# Сконфигурируем
 
 ```go{all|4}
 func ReadConfig(configSources string) (
@@ -979,7 +1002,6 @@ code {
 ---
 
 
-
 # Конфигурируем из волта
 
 ```go
@@ -1163,23 +1185,6 @@ code {
   return nil
 }
 ```
-
-<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
-
-<style>
-code {
-  font-size: 1.5em;
-  line-height: 1.5;
-}
-.number_slide {
-  position: absolute;
-  bottom: 15px;
-  right: 25px;
-}
-
-</style>
-
----
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -1384,8 +1389,8 @@ h2{
 
 # Viper
 
-<img class="logo" src="/https://goreflect.github.io/slide-images/viper.png" height="30"/>
-<img class="social" src="/https://goreflect.github.io/slide-images/viper_social.png"/>
+<img class="logo" src="https://goreflect.github.io/slide-images/viper.png" height="30"/>
+<img class="social" src="https://goreflect.github.io/slide-images/viper_social.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -1418,12 +1423,12 @@ h2{
 
 # Viper
 
-<img class="logo" src="/https://goreflect.github.io/slide-images/viper.png" height="30"/>
-<img class="social" src="/https://goreflect.github.io/slide-images/viper_social.png"/>
+<img class="logo" src="https://goreflect.github.io/slide-images/viper.png" height="30"/>
+<img class="social" src="https://goreflect.github.io/slide-images/viper_social.png"/>
 
 #### Ссылка на гитхаб: https://github.com/spf13/viper
 
-<img class="qr" src="/https://goreflect.github.io/slide-images/viper_github.png" height="50"/>
+<img class="qr" src="https://goreflect.github.io/slide-images/viper_github.png" height="50"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -1751,9 +1756,9 @@ h2{
 # Теперь к метрикам
 
 ## 1. 113 строчек кода
-## 2. Точечной конфигурации нет
+## 2. Точечной конфигурация +-
 ## 3. Дополнительный инфровый код
-## 4. Зафиксированный порядок источников
+## 4. Фиксированный порядок источников
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -1773,8 +1778,8 @@ h2{
 
 # Cleanenv
 
-<img class="logo" src="/https://goreflect.github.io/slide-images/cleanenv_logo.png" height="30"/>
-<img class="social" src="/https://goreflect.github.io/slide-images/cleanenv_social.png"/>
+<img class="logo" src="https://goreflect.github.io/slide-images/cleanenv_logo.png" height="30"/>
+<img class="social" src="https://goreflect.github.io/slide-images/cleanenv_social.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -1808,12 +1813,12 @@ h2{
 
 # Cleanenv
 
-<img class="logo" src="/https://goreflect.github.io/slide-images/cleanenv_logo.png" height="30"/>
-<img class="social" src="/https://goreflect.github.io/slide-images/cleanenv_social.png"/>
+<img class="logo" src="https://goreflect.github.io/slide-images/cleanenv_logo.png" height="30"/>
+<img class="social" src="https://goreflect.github.io/slide-images/cleanenv_social.png"/>
 
 #### Ссылка на гитхаб: https://github.com/ilyakaznacheev/cleanenv
 
-<img class="qr" src="/https://goreflect.github.io/slide-images/cleanenv_github.png" height="50"/>
+<img class="qr" src="https://goreflect.github.io/slide-images/cleanenv_github.png" height="50"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -2041,7 +2046,12 @@ func ReadConfig(configSources string) (ServiceConfiguration, error) {
 		return ServiceConfiguration{}, err
 	}
 	var configuration ServiceConfiguration
-	sources := configSource["sources"].(map[interface{}]interface{})
+  sources := configSource["sources"].(map[interface{}]interface{})
+
+  if err := cleanenv.ReadConfig(file, configuration); err != nil {
+		return ServiceConfiguration{}, err
+  }
+  
 	for key, source := range sources {
 		switch key {
 		case "vault":
@@ -2049,7 +2059,7 @@ func ReadConfig(configSources string) (ServiceConfiguration, error) {
 				return ServiceConfiguration{}, err
 			}
 		}
-	}
+  }
 	return configuration, nil
 }
 
@@ -2060,7 +2070,7 @@ func ReadConfig(configSources string) (ServiceConfiguration, error) {
 
 <style>
 code {
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 1.5;
 }
 .number_slide {
@@ -2095,6 +2105,52 @@ func readSourceConfig(file string) (
 <style>
 code {
   font-size: 2em;
+  line-height: 1.5;
+}
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
+</style>
+
+---
+
+# Читаем конфигу
+
+```go{6|7|9|15}
+func ReadConfig(configSources string) (ServiceConfiguration, error) {
+	configSource, err := readSourceConfig(configSources)
+	if err != nil {
+		return ServiceConfiguration{}, err
+	}
+	var configuration ServiceConfiguration
+  sources := configSource["sources"].(map[interface{}]interface{})
+
+  if err := cleanenv.ReadConfig(file, configuration); err != nil {
+		return ServiceConfiguration{}, err
+  }
+  
+	for key, source := range sources {
+		switch key {
+		case "vault":
+			if err := configuration.addVault(source.(map[interface{}]interface{})); err != nil {
+				return ServiceConfiguration{}, err
+			}
+		}
+  }
+	return configuration, nil
+}
+
+
+```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
+<style>
+code {
+  font-size: 1.2em;
   line-height: 1.5;
 }
 .number_slide {
@@ -2233,12 +2289,19 @@ h2{
 
 # Библиотека Gostructor
 
-<img class="social" src="/https://goreflect.github.io/slide-images/gostructor_social.png"/>
+<img class="social" src="https://goreflect.github.io/slide-images/gostructor_social.png"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
+<img src="https://goreflect.github.io/slide-images/LogotypeGostructor.png"/>
 
 <style>
+img {
+  margin-top: 15px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .qr {
   height: 250px;
   margin-left: auto;
@@ -2267,11 +2330,11 @@ h2{
 
 # Библиотека Gostructor
 
-<img class="social" src="/https://goreflect.github.io/slide-images/gostructor_social.png"/>
+<img class="social" src="https://goreflect.github.io/slide-images/gostructor_social.png"/>
 
 Ссылка на гитхаб: https://github.com/goreflect/gostructor
 
-<img class="qr" src="/https://goreflect.github.io/slide-images/gostructor_github.png" height="50"/>
+<img class="qr" src="https://goreflect.github.io/slide-images/gostructor_github.png" height="50"/>
 
 <div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
@@ -2610,7 +2673,7 @@ func ReadConfig() (ServiceConfiguration, error) {
 	var configuration ServiceConfiguration
 	_, err := gostructor.ConfigureSmart(&configuration)
 	if err != nil {
-		return ServiceConfiguration{}, nil
+		return ServiceConfiguration{}, err
 	}
 	return configuration, nil
 }
@@ -3126,7 +3189,7 @@ img {
 
 ## Остались вопросы?
 
-Ссылки:
+Ссылки: https://goreflect.github.io/links.txt
 
 <img src="https://goreflect.github.io/slide-images/links.png"/>
 
