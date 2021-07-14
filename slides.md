@@ -7,6 +7,7 @@ fonts:
   serif: Roboto Slab
   mono: Roboto
   weights: '400,800'
+download: true
 ---
 
 # Viper и Cleanenv для конфигурирования структур vs Велосипед
@@ -59,62 +60,100 @@ img {
 
 # Предистория
 
-## Проект - 36 микросервисов и сервисов
-
-<style>
-h2{
-  padding-top: 55px;
-}
-</style>
----
-
-# Предистория
-
-## Проект - 36 микросервисов и сервисов
-## Стек: Python, Golang, Kotlin
-
-<style>
-h2{
-  padding-top: 55px;
-}
-</style>
----
-
-# Предистория
-
-## Проект - 36 микросервисов и сервисов
-## Стек: Python, Golang, Kotlin
-
 ## История началась до Контура
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 h2{
   padding-top: 55px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+</style>
+---
+
+# Предистория
+
+## История началась до Контура
+## Проект - 36 микросервисов и сервисов
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
+<style>
+h2{
+  padding-top: 55px;
+}
+
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+</style>
+---
+
+# Предистория
+
+## История началась до Контура
+## Проект - 36 микросервисов и сервисов
+## Стек: Python, Golang, Kotlin
+
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
+<style>
+h2{
+  padding-top: 55px;
+}
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 ---
 
 # Глоссарий
 
-## Точечная конфигурация - конфигурация каждого отдельного поля
+## ***Точечная конфигурация*** - конфигурация каждого отдельного поля
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 55px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 ---
 
 # Глоссарий
 
-## Точечная конфигурация - конфигурация каждого отдельного поля
-## Источник конфигурации - ресурс
+## ***Точечная конфигурация*** - конфигурация каждого отдельного поля
+## ***Источник конфигурации*** - ресурс
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 
 <style>
 h2{
   padding-top: 55px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 ---
 
@@ -122,10 +161,18 @@ h2{
 
 ## 1. hocon, toml, yaml, ini, json
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -135,10 +182,18 @@ h2{
 ## 1. hocon, toml, yaml, ini, json
 ## 2. дефолтные значения, переменные окружения
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -149,10 +204,18 @@ h2{
 ## 2. дефолтные значения, переменные окружения
 ## 3. vault
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -164,10 +227,18 @@ h2{
 ## 3. vault
 ## 4. config file server(spring cloud config server), key\value store(consul, etcd, firestore) 
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -176,6 +247,8 @@ h2{
 
 
 <img src="slide-images/go_bg_3.jpg" />
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2 {
@@ -186,6 +259,12 @@ h2 {
 img {
   
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -194,18 +273,35 @@ img {
 
 <img src="/slide-images/11.png"/>
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
+<style>
+
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+</style>
 ---
 
 # Dev 
 
 <img src="/slide-images/12.png" height={40}/>
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h1 {
   text-align: center;
   
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -214,12 +310,19 @@ h1 {
 
 <img src="/slide-images/13.png" height="30"/>
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h1 {
   text-align: center;
   
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -228,11 +331,18 @@ h1 {
 
 <img src="/slide-images/14.png" height="30"/>
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h1 {
   text-align: center;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -241,10 +351,18 @@ h1 {
 
 ## 1. Есть ли точечная конфигурация?
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -253,10 +371,19 @@ h2{
 
 ## 1. Есть ли точечная конфигурация?
 ## 2. vault, hocon, default, env, spring config server
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -267,10 +394,18 @@ h2{
 ## 2. vault, hocon, default, env, spring config server
 ## 3. Понятная структура ошибок
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -282,17 +417,27 @@ h2{
 ## 3. Понятная структура ошибок
 ## 4. Небольшой объём написания инфраструктурного кода
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
 
-# Нам нужна конфигурация окружения
+# Конфигурация окружения
 
 <img src="slide-images/infoGraphics/hand_env_config.png"/>
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 img {
@@ -300,13 +445,21 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
 
-# А уже относительно этого можно будем конфигурировать структуры
+# Мапим значения из источников
 
 <img src="slide-images/infoGraphics/hand_config.png"/>
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 img {
@@ -314,6 +467,12 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -321,7 +480,7 @@ img {
 # Что будем конфигурировать?
 
 
-```go{2}
+```go{all|2}
 type ServiceConfiguration struct {
 	Main           MainConfig
 	Db             DatabaseConfig
@@ -329,11 +488,20 @@ type ServiceConfiguration struct {
 	BusinessSecret BusinessConf 
 }
 ```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 2.7em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -349,16 +517,24 @@ type MainConfig struct {
 }
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 3.3em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
 
-# Суммирующая структура
+# Что будем конфигурировать?
 
 ```go{all|3}
 type ServiceConfiguration struct {
@@ -368,11 +544,20 @@ type ServiceConfiguration struct {
 	BusinessSecret BusinessConf 
 }
 ```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 2.7em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -388,15 +573,23 @@ type DatabaseConfig struct {
 }
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 3.3em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 ---
 
-# Суммирующая структура
+# Что будем конфигурировать?
 
 ```go{all|4}
 type ServiceConfiguration struct {
@@ -406,11 +599,20 @@ type ServiceConfiguration struct {
 	BusinessSecret BusinessConf 
 }
 ```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 2.7em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -426,15 +628,23 @@ type IntegrationConf struct {
 }
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 3.3em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 ---
 
-# Суммирующая структура
+# Что будем конфигурировать?
 
 ```go{all|5}
 type ServiceConfiguration struct {
@@ -444,11 +654,20 @@ type ServiceConfiguration struct {
 	BusinessSecret BusinessConf 
 }
 ```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 2.7em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -463,17 +682,26 @@ type BusinessConf struct {
 }
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 3.3em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
+
 ---
 
 # Как будет выглядеть конфигурация окружения?
 
-```yaml{all|2|7|9|11|13|all}
+```yaml{all|2|7|9|11|13|3-5|8|10|all}
 sources:
   vault:
     Address: $VAULT_ADDRESS
@@ -489,11 +717,19 @@ sources:
   default:
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 1.5em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -512,11 +748,20 @@ func ReadConfig(configSources string) (
 }
 
 ```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 2em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -537,11 +782,20 @@ func readSourceConfig(file string) (
 	return result, nil
 }
 ```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 2em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -560,18 +814,26 @@ func ReadConfig(configSources string) (
 }
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 2em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
 
 # Разбираем источники
 
-```go{all|3|4}
+```go{all|3-5}
   for key, source := range sources {
 		switch key {
 		case "json":
@@ -584,18 +846,26 @@ code {
 	}
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 1.5em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
 
-# Метод для чтения и мержа нашей конфигурации
+# Метод для чтения и мержа с получателем конфигурации
 
-```go{all|2}
+```go{all|3}
 func (config *ServiceConfiguration) addFile(file string) 
 error {
 	configurationByFile, err := readFile(file)
@@ -607,11 +877,19 @@ error {
 
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 2em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -635,18 +913,26 @@ func readFile(file string) (ServiceConfiguration, error) {
 
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 2em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
 
 # Мержим с нашей конфигурацией
 
-```go{all|7-8|all}
+```go{7-8|all}
 func (config *ServiceConfiguration) addFile(file string) 
 error {
 	configurationByFile, err := readFile(file)
@@ -659,11 +945,19 @@ error {
 
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 2em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -677,20 +971,21 @@ code {
       return ServiceConfiguration{}, err
     }
     break
-  case "env":
-    if err := configuration.addEnv(); err != nil {
-      return ServiceConfiguration{}, err
-    }
-  case "default":
-    configuration.addDefault()
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 code {
   font-size: 2em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -711,11 +1006,19 @@ func (config *ServiceConfiguration) addVault(
 }
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 2em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -738,11 +1041,20 @@ code {
   return nil
 }
 ```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 1.5em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -764,11 +1076,24 @@ func (cfg *ConfigVault) connectToVault() error {
 }
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
+<style>
+code {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+</style>
 ---
 
 #  Конфигурируем из волта
 
-```go{all|4}
+```go{6}
 ...
   if err := configurationVault.connectToVault(); err != nil {
 		return err
@@ -784,29 +1109,57 @@ func (cfg *ConfigVault) connectToVault() error {
   return nil
 }
 ```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 1.5em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
 
 # Получение данных из волта
 
+```go{3|7|all}
+func (cfg ConfigVault) getPath(path string) (
+  map[string]interface{}, error) {
+	pathSecrets, err := cfg.Connection.Logical().Read(path)
+	if err != nil {
+		return nil, err
+	}
+	return pathSecrets.Data, nil
+}
+```
+
 <style>
 code {
   font-size: 1.5em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 ---
 
 #  Конфигурируем из волта
 
-```go{all|8|9|10}
+```go{all|10-12}
 ...
   if err := configurationVault.connectToVault(); err != nil {
 		return err
@@ -822,48 +1175,63 @@ code {
   return nil
 }
 ```
-<style>
-code {
-  font-size: 1.5em;
-  line-height: 1.5;
-}
-</style>
 
----
-
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 code {
   font-size: 1.5em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
 
-# Опишем таким образом процесс для всех источников
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
-```go{all|8}
-  case "vault":
-    if err := configuration.addVault(source
-      .(map[interface{}]interface{})); err != nil {
-      return ServiceConfiguration{}, err
-    }
-    break
+<style>
+code {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
+</style>
+
+---
+
+# Для переменных окружения
+
+```go{1-2}
   case "env":
     if err := configuration.addEnv(); err != nil {
       return ServiceConfiguration{}, err
     }
-  case "default":
-    configuration.addDefault()
-  }
 ```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 code {
   font-size: 1.5em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 
@@ -889,39 +1257,45 @@ func (config *ServiceConfiguration) addEnv() error {
 }
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 1.5em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 
 ---
 
-# Остались значение по умолчанию
+# Для значений по умолчанию
 
-```go{all|12}
-  case "vault":
-    if err := configuration.addVault(source
-      .(map[interface{}]interface{})); err != nil {
-      return ServiceConfiguration{}, err
-    }
-    break
-  case "env":
-    if err := configuration.addEnv(); err != nil {
-      return ServiceConfiguration{}, err
-    }
+```go{all}
   case "default":
     configuration.addDefault()
   }
 ```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 code {
   font-size: 1.5em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 
@@ -936,11 +1310,19 @@ func (config *ServiceConfiguration) addDefault() {
 }
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 2.3em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 
@@ -950,11 +1332,18 @@ code {
 
 ## 1. 167 строк кода
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 
@@ -965,11 +1354,18 @@ h2{
 ## 1. 167 строк кода
 ## 2. Точечной конфигурации нет
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 
@@ -981,11 +1377,18 @@ h2{
 ## 2. Точечной конфигурации нет
 ## 3. Дополнительный код
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 
@@ -996,6 +1399,8 @@ h2{
 <img class="logo" src="/slide-images/viper.png" height="30"/>
 <img class="social" src="/slide-images/viper_social.png"/>
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 .qr {
   height: 350px;
@@ -1013,9 +1418,17 @@ h2{
   margin-left: auto;
   margin-right: auto;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
+
+# Viper
 
 <img class="logo" src="/slide-images/viper.png" height="30"/>
 <img class="social" src="/slide-images/viper_social.png"/>
@@ -1024,12 +1437,14 @@ h2{
 
 <img class="qr" src="/slide-images/viper_github.png" height="50"/>
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 h4 {
   text-align: center;
 }
 .qr {
-  height: 350px;
+  height: 300px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1044,6 +1459,12 @@ h4 {
   margin-left: auto;
   margin-right: auto;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1052,12 +1473,20 @@ h4 {
 
 <img src="slide-images/infoGraphics/viper_settings.png"/>
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 img {
   height: 450px;
   margin-left: auto;
   margin-right: auto;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1066,19 +1495,27 @@ img {
 
 <img src="slide-images/infoGraphics/viper_get_values.png"/>
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 img {
   height: 450px;
   margin-left: auto;
   margin-right: auto;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
 
 # Сконфигурируем viper
 
-```go{all|4|5|7|all}
+```go{all|3|5,6,8,10|7,9|all}
 func settingViper() {
 	viper.SetConfigName("ServiceConfiguration")
 	viper.SetConfigType("json")
@@ -1092,11 +1529,19 @@ func settingViper() {
 }
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 1.6em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 
@@ -1104,7 +1549,7 @@ code {
 
 # Опишем функционал по чтению конфигурации 
 
-```go{all|2}
+```go{all|2-6}
 func ReadConfig(path string) (ServiceConfiguration, error) {
 	sourceConfig := readSourceConfig(path)
 	var configuration ServiceConfiguration
@@ -1123,11 +1568,19 @@ func ReadConfig(path string) (ServiceConfiguration, error) {
 }
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 1.5em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 
@@ -1144,11 +1597,19 @@ func readSourceConfig(fileName string)(map[string]interface{}) {
 }
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 1.8em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 
@@ -1156,7 +1617,7 @@ code {
 
 # Описываем функциона по чтению конфигурации
 
-```go{4|9|10}
+```go{4|9-10}
 func ReadConfig(path string) (ServiceConfiguration, error) {
 	sourceConfig := readSourceConfig(path)
 	var configuration ServiceConfiguration
@@ -1175,35 +1636,19 @@ func ReadConfig(path string) (ServiceConfiguration, error) {
 }
 ```
 
-<style>
-code {
-  font-size: 1.8em;
-  line-height: 1.5;
-}
-</style>
-
-
----
-
-# Конфигурируем из волта
-
-```go
-func (config *ServiceConfiguration) addVault(dataFromEnv 
-map[interface{}]interface{}) error {
-	configurationVault := ConfigVault{
-		VaultAddress: dataFromEnv["Address"].(string),
-		VaultPath:    dataFromEnv["Path"].(string),
-		VaultToken:   dataFromEnv["Token"].(string),
-	}
-  ...
-}
-```
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 code {
   font-size: 1.8em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 
@@ -1212,6 +1657,14 @@ code {
 # Чтение из Vault
 
 ```go{all}
+func (config *ServiceConfiguration) addVault(dataFromEnv 
+map[interface{}]interface{}) error {
+	configurationVault := ConfigVault{
+		VaultAddress: dataFromEnv["Address"].(string),
+		VaultPath:    dataFromEnv["Path"].(string),
+		VaultToken:   dataFromEnv["Token"].(string),
+  }
+  
   if err := configurationVault.connectToVault(); err != nil {
 		return err
 	}
@@ -1227,13 +1680,20 @@ code {
 	return nil
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
-  font-size: 1.5em;
+  font-size: 1.1em;
   line-height: 1.5;
 }
-</style>
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
 
+</style>
 
 ---
 
@@ -1241,11 +1701,18 @@ code {
 
 ## 1. 113 строчек кода
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 ---
 
@@ -1255,11 +1722,18 @@ h2{
 ## 1. 113 строчек кода
 ## 2. Точечной конфигурации нет
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1270,11 +1744,41 @@ h2{
 ## 2. Точечной конфигурации нет
 ## 3. Дополнительный инфровый код
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
+</style>
+
+---
+
+# Теперь к метрикам
+
+## 1. 113 строчек кода
+## 2. Точечной конфигурации нет
+## 3. Дополнительный инфровый код
+## 4. Зафиксированный порядок источников
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
+<style>
+h2{
+  padding-top: 25px;
+}
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1283,6 +1787,8 @@ h2{
 
 <img class="logo" src="/slide-images/cleanenv_logo.png" height="30"/>
 <img class="social" src="/slide-images/cleanenv_social.png"/>
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 
@@ -1302,6 +1808,12 @@ h2{
   margin-left: auto;
   margin-right: auto;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1314,6 +1826,8 @@ h2{
 #### Ссылка на гитхаб: https://github.com/ilyakaznacheev/cleanenv
 
 <img class="qr" src="/slide-images/cleanenv_github.png" height="50"/>
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h4 {
@@ -1335,6 +1849,12 @@ h4 {
   margin-left: auto;
   margin-right: auto;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1343,11 +1863,19 @@ h4 {
 
 <img src="slide-images/infoGraphics/tags_go.png"/>
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 img {
   margin-left: auto;
   margin-right: auto;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1356,11 +1884,19 @@ img {
 
 <img src="slide-images/infoGraphics/cleanenv_meta.png"/>
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 img {
   margin-left: auto;
   margin-right: auto;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1369,11 +1905,19 @@ img {
 
 <img src="slide-images/infoGraphics/cleanenv_config_struct.png"/>
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 img {
   margin-left: auto;
   margin-right: auto;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1382,10 +1926,18 @@ img {
 
 ## 1. env
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 ---
 
@@ -1395,28 +1947,45 @@ h2{
 ## 1. env
 ## 2. env-default
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 ---
 
 # Модифицируем наши конфиг-структуры
 
-```go{all|2|3|all}
+```go{all|2|3|4-5|all}
 type MainConfig struct {
 	IsKubernetes    bool   `env-default:"true"`
 	ServiceName     string `env:"SERVICE_NAME"`
-	StrategyRequest string `env:"MAIN_STRATEGY_REQUEST" env-default:"sequential"`
+    StrategyRequest string `env:"MAIN_STRATEGY_REQUEST" 
+      env-default:"sequential"`
 }
 ```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 code {
   font-size: 1.5em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1426,16 +1995,24 @@ code {
 ```go
 type DatabaseConfig struct {
 	Replicass []string `env:"MONGO_REPLICAS"`
-	Username  string
-	Password  string
+	Username  string `json:"username"`
+	Password  string `json:"password"`
 }
 ```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 code {
   font-size: 1.5em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1450,11 +2027,19 @@ type IntegrationConf struct {
 }
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 1.5em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1483,11 +2068,19 @@ func ReadConfig(configSources string) (ServiceConfiguration, error) {
 
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 1.5em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1508,11 +2101,20 @@ func readSourceConfig(file string) (
 	return result, nil
 }
 ```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 2em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1543,17 +2145,33 @@ func (config *ServiceConfiguration) addVault(dataFromEnv map[interface{}]interfa
 }
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
+<style>
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+</style>
 ---
 
 # Метрики
 
 ## 1. 94 строчки кода
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1563,10 +2181,18 @@ h2{
 ## 1. 94 строчки кода
 ## 2. Точечная конфигурация есть
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1578,18 +2204,51 @@ h2{
 ## 2. Точечная конфигурация есть
 ## 3. Мало источников
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
+</style>
+
+---
+
+# Метрики
+
+## 1. 94 строчки кода
+## 2. Точечная конфигурация есть
+## 3. Мало источников
+## 4. Порядок конфигурации жёстко зафиксирован
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
+<style>
+h2{
+  padding-top: 25px;
+}
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
 
 # Библиотека Gostructor
 
-<img class="social" src="/slide-images/github_social.png"/>
+<img class="social" src="/slide-images/gostructor_social.png"/>
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 
 <style>
 .qr {
@@ -1608,18 +2267,26 @@ h2{
   margin-left: auto;
   margin-right: auto;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
 
 # Библиотека Gostructor
 
-<img class="social" src="/slide-images/github_social.png"/>
+<img class="social" src="/slide-images/gostructor_social.png"/>
 
 Ссылка на гитхаб: https://github.com/goreflect/gostructor
 
 <img class="qr" src="/slide-images/gostructor_github.png" height="50"/>
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 .qr {
   height: 250px;
@@ -1637,6 +2304,12 @@ h2{
   margin-left: auto;
   margin-right: auto;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1645,11 +2318,19 @@ h2{
 
 <img src="slide-images/infoGraphics/gostructor_meta.png"/>
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 img {
   margin-left: auto;
   margin-right: auto;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1658,12 +2339,20 @@ img {
 
 <img src="slide-images/infoGraphics/gostructor_get_configs.png"/>
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 img {
   height: 450px;
   margin-left: auto;
   margin-right: auto;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1672,12 +2361,20 @@ img {
 
 <img src="slide-images/infoGraphics/gostructor_tag1.png"/>
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 img {
   height: 450px;
   margin-left: auto;
   margin-right: auto;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1686,12 +2383,20 @@ img {
 
 <img src="slide-images/infoGraphics/gostructor_priority_1.png"/>
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 img {
   height: 450px;
   margin-left: auto;
   margin-right: auto;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1700,12 +2405,20 @@ img {
 
 <img src="slide-images/infoGraphics/gostructor_priority2.png"/>
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 img {
   height: 450px;
   margin-left: auto;
   margin-right: auto;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1718,35 +2431,51 @@ type MainConfig struct {
     cf_default:"false"`
   ServiceName     string `cf_json:"name" 
     cf_env:"SERVICE_NAME" cf_default:"test"`
-	StrategyRequest string `cf_default:"sequential"`
+  StrategyRequest string `cf_default:"sequential"`
 }
 ```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 code {
   font-size: 2em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
 
 # Модифицируем наши структуры
 
-```go
+```go{4-5|all}
 type DatabaseConfig struct {
   Replicas []string `cf_env:"MONGO_REPLICAS"
     cf_default:"localhost:27017"`
-	Username string   `cf_vault:"infra/mongo#username"`
-	Password string   `cf_vault:"infra/mongo#password"`
+  Username string   `cf_vault:"infra/mongo#username"`
+  Password string   `cf_vault:"infra/mongo#password"`
 }
 ```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 code {
   font-size: 2em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1757,35 +2486,51 @@ code {
 type IntegrationConf struct {
   APIKey          string `cf_vault:"integration/serviceA#api-key" 
     cf_env:"SERVICE_A_KEY" cf_default:"testApi"`
-	StrategyRequest string `cf_default:"sequential"`
-	RateLimit       int16  `cf_default:"100"`
+  StrategyRequest string `cf_default:"sequential"`
+  RateLimit       int16  `cf_default:"100"`
 }
 ```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 code {
   font-size: 2em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
 
 # Кастомизируем последовательность источников
 
-```go
+```go{2|3}
 type IntegrationConf struct {
   APIKey string `... cf_priority:"SEQUENCE_1:cf_env,
-  cf_default;SEQUENCE_2:cf_vault"`
+    cf_default;SEQUENCE_2:cf_vault"`
   ...
 }
 ```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 code {
   font-size: 2em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1801,11 +2546,19 @@ type BusinessConf struct {
 }
 ```
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 2em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1813,20 +2566,28 @@ code {
 # Кастомизируем последовательность источников
 
 
-```go
+```go{2,4|3,5}
 type BusinessConf struct {
-  PrivateKeyPath  string `cf_priority:"SEQUENCE_1:
-  cf_default;SEQUENCE_2:cf_vault"`
-  PrivateCertPath string `cf_priority:"SEQUENCE_1:
-  cf_default;SEQUENCE_2:cf_vault"`
+  PrivateKeyPath  string `cf_priority:"SEQUENCE_1:cf_default;
+    SEQUENCE_2:cf_vault"`
+  PrivateCertPath string `cf_priority:"SEQUENCE_1:cf_default;
+    SEQUENCE_2:cf_vault"`
 }
 ```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 code {
   font-size: 2em;
   line-height: 1.5;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1836,19 +2597,27 @@ code {
 
 ## Добавим в переменные окружения PRIORITY
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 h2 {
   font-size: 1.5em;
   margin-left: auto;
   margin-right: auto;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
 
 # Читаем конфигурацию
 
-```go
+```go{2|3|all}
 func ReadConfig() (ServiceConfiguration, error) {
 	var configuration ServiceConfiguration
 	_, err := gostructor.ConfigureSmart(&configuration)
@@ -1859,50 +2628,40 @@ func ReadConfig() (ServiceConfiguration, error) {
 }
 
 ```
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 code {
   font-size: 2em;
   line-height: 1.5;
 }
-</style>
-
----
-
-
-# Метрики
-
-## 1. 8 строчек кода
-
-
-<style>
-h2{
-  padding-top: 25px;
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
 }
+
 </style>
+
 ---
-
-# Метрики
-
-## 1. 8 строчек кода
-## 2. Точечная конфигурация есть
-
-
-<style>
-h2{
-  padding-top: 25px;
-}
-</style>
----
-
 
 # Плюсы gostructor
 
 ## 1. Автоматизация вне зависимости от окружения
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1913,11 +2672,18 @@ h2{
 ## 2. Точечная конфигурация
 
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1929,11 +2695,18 @@ h2{
 ## 3. Множество источников
 
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1945,11 +2718,18 @@ h2{
 ## 3. Множество источников
 ## 4. Понятная система ошибок
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1958,12 +2738,19 @@ h2{
 
 ## 1. Дополнительная зависимость + транзитивные зависимости в проект
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1973,12 +2760,19 @@ h2{
 ## 1. Дополнительная зависимость + транзитивные зависимости в проект
 ## 2. Нет горячих настроек
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -1990,11 +2784,18 @@ h2{
 ## 3. Не поддержан Spring Cloud Config Server, key\value
 
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -2006,11 +2807,18 @@ h2{
 ## 3. Не поддержан Spring Cloud Config Server, key\value
 ## 4. Небольшая популярность
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -2019,11 +2827,18 @@ h2{
 
 ## 1. Skillmap
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -2033,11 +2848,18 @@ h2{
 ## 1. Skillmap
 ## 2. AuthEvent
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -2048,11 +2870,18 @@ h2{
 ## 2. AuthEvent
 ## 3. ECCM компании Eltex 
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -2061,11 +2890,18 @@ h2{
 
 ## 1. Spring cloud config server
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -2075,12 +2911,19 @@ h2{
 ## 1. Spring cloud config server
 ## 2. Key\Value (Consul & etcd)
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -2091,12 +2934,19 @@ h2{
 ## 2. Key\Value (Consul & etcd)
 ## 3. Упрощение синтаксиса в тегах
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -2108,12 +2958,19 @@ h2{
 ## 3. Упрощение синтаксиса в тегах
 ## 4. Краткая документашка по полям 
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -2126,11 +2983,18 @@ h2{
 ## 4. Краткая документашка по полям 
 ## 5. Отслеживание измнений в файлах
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -2144,11 +3008,18 @@ h2{
 ## 5. Отслеживание измнений в файлах
 ## ...
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -2159,11 +3030,18 @@ h2{
 ## 1. Больше 1 стейджинга
 
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -2173,11 +3051,18 @@ h2{
 ## 1. Больше 1 стейджинга
 ## 2. Больше 1 источника конфигурации
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
@@ -2189,18 +3074,60 @@ h2{
 ## 2. Больше 1 источника конфигурации
 ## 3. Кто не хочет писать лишний код
 
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
 
 <style>
 h2{
   padding-top: 25px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>
 
 ---
 
+
+# Кому может подойти
+
+## 1. Больше 1 стейджинга
+## 2. Больше 1 источника конфигурации
+## 3. Кто не хочет писать лишний код
+## 4. У кого конфигурация - строгий контракт
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
+<style>
+h2{
+  padding-top: 25px;
+}
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
+</style>
+
+---
+
+
 # Напоследок
 
 "Лучший тот код, который не написан"
+
+<div class="number_slide">{{ $slidev.nav.currentPage.value }}</div>
+
+<style>
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+</style>
 
 ---
 
@@ -2217,4 +3144,10 @@ h2{
   position: fixed;
   bottom: 20px;
 }
+.number_slide {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
 </style>

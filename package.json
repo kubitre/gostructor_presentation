@@ -11,5 +11,8 @@
     "@slidev/theme-seriph": "^0.6.6",
     "shiki": "^0.9.5"
   },
-  "name": "slidev"
+  "name": "slidev",
+  "devDependencies": {
+    "playwright-chromium": "^1.12.3"
+  }
 }
